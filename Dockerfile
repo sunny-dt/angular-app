@@ -1,9 +1,4 @@
 
-
-
-
-
-
 # Stage 1
 FROM node:10.18.0-alpine3.9 as node2
 
