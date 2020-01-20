@@ -1,16 +1,12 @@
 pipeline {
-   agent {
-    // this image provides everything needed to run Cypress
-    docker {
-      image 'cypress/base'
-    }
-  }
-  stages {
-      stage('One') {
+   agent any
+   agent any
+    stages {
+        stage('One') {
                 steps {
-                        echo 'Looking for local server'
+                        echo 'Hi, this is Zulaikha from edureka'
 			
                 }
         }
-  }
+    }
 }
