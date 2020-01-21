@@ -1,11 +1,11 @@
 pipeline {
-   agent any
+    agent { dockerfile true }
     stages {
-        stage('One') {
-                steps {
-                        echo 'Hi, this is from jenkins'
-			
-                }
+        stage('Test') {
+            steps {
+                echo 'Hello world'
+                sh 'From dockerfile'
+            }
         }
     }
 }
